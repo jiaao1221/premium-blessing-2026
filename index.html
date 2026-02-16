@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="2026年高端新年祝福 - 马年大吉！">
+    <!-- 微信分享配置 -->
+    <meta property="og:title" content="2026马年高端新年祝福">
+    <meta property="og:description" content="来自贾傲的高端新年祝福，祝您马年大吉，万事如意！">
+    <meta property="og:image" content="https://jiaao1221.github.io/horse-icon.png">
+    <meta property="og:url" content="https://jiaao1221.github.io/premium-blessing-2026/">
+    <title>2026马年高端新年祝福</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700;900&family=Ma+Shan+Zheng&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Serif SC', 'Microsoft YaHei', serif;
+            background: linear-gradient(135deg, #8B0000 0%, #B22222 50%, #8B0000 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+        }
+        
+        /* 粒子背景 */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            background: rgba(255, 215, 0, 0.3);
+            border-radius: 50%;
+            animation: float 15s infinite ease-in-out;
+        }
+        
+        .container {
+            text-align: center;
+            z-index: 10;
+            padding: 30px;
+            max-width: 90%;
+            position: relative;
+        }
+        
+        .title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #FFD700;
+            margin-bottom: 40px;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+            letter-spacing: 3px;
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+        
+        .blessing {
+            font-size: 1.8rem;
+            color: #FFFFFF;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            min-height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            transition: all 0.5s ease;
+            line-height: 1.6;
+            font-family: 'Noto Serif SC', serif;
+        }
+        
+        .signature {
+            font-size: 1.2rem;
+            color: #FFD700;
+            margin-top: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            font-style: italic;
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+        
+        .refresh-btn {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #8B0000;
+            border: none;
+            padding: 15px 35px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+            letter-spacing: 2px;
+            font-family: 'Noto Serif SC', serif;
+        }
+        
+        .refresh-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(255, 215, 0, 0.6);
+        }
+        
+        .refresh-btn:active {
+            transform: translateY(0) scale(0.98);
+        }
+        
+        /* 动画定义 */
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(255, 215, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.2);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.4);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+                opacity: 0.3;
+            }
+            25% {
+                transform: translateY(-20px) translateX(10px) rotate(5deg);
+                opacity: 0.6;
+            }
+            50% {
+                transform: translateY(-40px) translateX(-10px) rotate(-5deg);
+                opacity: 0.8;
+            }
+            75% {
+                transform: translateY(-20px) translateX(-5px) rotate(3deg);
+                opacity: 0.5;
+            }
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+                margin-bottom: 30px;
+            }
+            .blessing {
+                font-size: 1.4rem;
+                padding: 25px;
+                min-height: 160px;
+                line-height: 1.5;
+            }
+            .signature {
+                font-size: 1rem;
+            }
+            .refresh-btn {
+                font-size: 1.2rem;
+                padding: 12px 25px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .title {
+                font-size: 2rem;
+                margin-bottom: 25px;
+            }
+            .blessing {
+                font-size: 1.2rem;
+                min-height: 140px;
+                line-height: 1.4;
+            }
+            .signature {
+                font-size: 0.9rem;
+            }
+            .refresh-btn {
+                font-size: 1.1rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <h1 class="title">2026马年新年祝福</h1>
+        <div id="blessing" class="blessing">
+            点击下方按钮获取您的专属祝福！
+        </div>
+        <div class="signature">来自贾傲的祝福</div>
+        <button class="refresh-btn" onclick="getRandomBlessing()">换一个祝福</button>
+    </div>
+
+    <script>
+        // 创建粒子背景
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // 随机大小
+                const size = Math.random() * 10 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // 随机位置
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // 随机动画延迟和持续时间
+                const duration = Math.random() * 20 + 10;
+                const delay = Math.random() * 5;
+                particle.style.animationDuration = `${duration}s`;
+                particle.style.animationDelay = `${delay}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        const blessings = [
+            "骏马奔腾迎新岁，\n前程似锦步步高。",
+            "龙马精神身体健，\n事业腾飞财运来。",
+            "一马当先创伟业，\n万马奔腾展宏图。",
+            "马到成功事事顺，\n心想事成福满门。",
+            "金马玉堂家兴旺，\n幸福安康永相随。",
+            "天马行空志高远，\n梦想成真展翅飞。",
+            "快马加鞭学业进，\n金榜题名喜报传。",
+            "老马识途经验丰富，\n智慧人生步步高。",
+            "青梅竹马情意深，\n白头偕老永相伴。",
+            "宝马雕车生活美，\n品质卓越享人生。",
+            "马壮人强精力旺，\n健康长寿福寿长。",
+            "马工枚速效率高，\n工作顺利业绩佳。",
+            "马跃千里征途远，\n勇往直前创辉煌。",
+            "神马飞驰好运来，\n吉祥如意福满堂。",
+            "马首是瞻领导力，\n团队协作共成功。",
+            "走马观花眼界宽，\n胸怀天下志更坚。",
+            "马耳东风烦恼去，\n心旷神怡乐逍遥。",
+            "千军万马齐奋进，\n团结一心创未来。",
+            "马水车龙资源广，\n财源滚滚永不竭。",
+            "马咽车阗声势壮，\n成功在望喜洋洋。"
+        ];
+        
+        function getRandomBlessing() {
+            const blessingElement = document.getElementById('blessing');
+            blessingElement.style.opacity = '0';
+            blessingElement.style.transform = 'translateY(10px)';
+            
+            setTimeout(() => {
+                const randomIndex = Math.floor(Math.random() * blessings.length);
+                blessingElement.innerHTML = blessings[randomIndex].replace(/\n/g, '<br>');
+                blessingElement.style.opacity = '1';
+                blessingElement.style.transform = 'translateY(0)';
+            }, 300);
+        }
+        
+        // 页面加载时自动显示一个随机祝福
+        window.addEventListener('load', function() {
+            createParticles();
+            setTimeout(getRandomBlessing, 500);
+        });
+        
+        // 微信分享适配
+        document.addEventListener('WeixinJSBridgeReady', function() {
+            WeixinJSBridge.invoke('showOptionMenu');
+        }, false);
+    </script>
+</body>
+</html>
