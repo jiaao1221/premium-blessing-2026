@@ -187,6 +187,11 @@
         window.addEventListener('load', function() {
             setTimeout(getRandomBlessing, 500);
         });
+        
+        // 微信分享适配
+        document.addEventListener('WeixinJSBridgeReady', function() {
+            WeixinJSBridge.invoke('showOptionMenu');
+        }, false);
     </script>
 </body>
 </html>
